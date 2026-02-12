@@ -74,4 +74,14 @@ a:hover{
     text-align: center;
     font-size: x-large;
 }
+footer{
+    padding: 120px;
+    background-color: #f7ddcd;
+    text-align: center;
+    opacity: 0.9;
+    line-height: 1.6;
+    /* width:100%; */
+
+    
+}
 
