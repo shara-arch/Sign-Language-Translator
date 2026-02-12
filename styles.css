@@ -1,1 +1,38 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #d69e7a;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+.socials{
+    word-spacing: 50px;
+    font-size: small;
+    color: black;
+    
+    
+}
+
+ header{
+    background-color: #f7ddcd;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 15px;
+    text-align: center;
+    opacity: 0.9;
+}
+.nav{
+    word-spacing: 200px;
+    color: black;
+    font-weight: 200;
+    font-size: large;
+    width: 100%;
+}
 
