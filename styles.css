@@ -36,3 +36,32 @@ a:hover{
     width: 100%;
 }
 
+.welcome{
+    padding:50px;
+    background-color: #d69e7a;
+    border-radius: 25%;
+    font-size: x-large;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin:10%;
+    text-align: center;
+    
+}
+#image-container{
+    display:grid;
+    grid-template-columns:repeat(2,auto);
+    gap:10px;
+    padding:30px;
+    margin:10%;
+   
+}
+.gallery-2{
+    display:grid;
+    grid-template-columns:repeat(3,auto);
+    gap:10px;
+    padding:30px;
+    margin:10px;
+    background-color: #eeaac1;
+    min-width: fit-content;
+    opacity: 0.9;
+}
+
