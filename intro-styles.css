@@ -1,1 +1,16 @@
+.asl-intro{
+    
+    text-align: justify;
+    margin-left: 10%;
+    padding:30px;
+    font-size: larger;
 
+}
+body{
+    margin:10px;
+}
+h2{
+    text-align: center;
+    margin-top: 180px;
+    color:#3e2b27;
+}
