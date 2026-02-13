@@ -1,6 +1,6 @@
-.asl-intro{
+.asl-etiquette{
     
-    text-align: justify;
+    text-align: left;
     margin-left: 10%;
     padding:30px;
     font-size: larger;
@@ -13,4 +13,27 @@ h2{
     text-align: center;
     margin-top: 180px;
     color:#3e2b27;
+}
+
+form{
+    grid-template-columns: 150px 1fr;
+    grid-gap: 15px 20px;
+    width: 70%;
+    text-align: left;
+    padding: 50px;
+    background-color: rgba(227, 225, 225, 0.7);
+    margin: 50px auto;
+    max-width: fit-content;
+    font-size: large;
+    flex:1;
+}
+.asl-intro{
+    flex:1;
+   padding: 2%;
+    gap:15px;
+    margin-right: 10%;
+    background-color: rgb(163, 147, 112);
+    border:none;
+    border-radius: 4px;
+    padding-bottom: 0;
 }
