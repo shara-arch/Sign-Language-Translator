@@ -35,7 +35,7 @@
     </header>
     
     <section>
-      <h2>Etiquette for Hearing Persons when interacting with Deaf Persons.</h2>
+      <h2 class="heading">Etiquette for Hearing Persons when interacting with Deaf Persons.</h2>
       <p class="asl-etiquette">
         When engaging with deaf people, just like other spaces, have their own rules of ettiquette.<br>
         The main ones are what we use in our everyday lives. You should treat deaf persons with respect and patience.<br>
@@ -63,34 +63,40 @@
 
       
     </section>
-    <section>
+    <section class="asl-etiquette">
       <h2>Introducing yourself using ASL</h2>
       <p>
-        In order to introduce yourself, enter the relevant details in the form below to learn simple introduction phrase, when communication with deaf persons.
+        Enter the relevant details in the form below to learn simple introduction phrases, when communicating with deaf persons.
         
       </p>
-      <aside>
-      <form>
-        <label for="name">My name is </label>
-        <input type="text" id="name" name="name" placeholder="e.g Jasmine" required><br><br>
-        <label for="hobby">I like</label>
-        <select id="hobby" name="hobby">
-          <option value="reading">Reading</option>
-          <object value="music">Hiking</object>
-          <option value="cooking">Cooking</option>
-          <option value="art">Art</option>
-        </select><br><br>
+      </section>
+     <div class="container">
+  <aside>
+    <form id="userForm">
+      <h3>Phrase in English:</h3>
+      <label for="name">My name is </label>
+      <input type="text" id="name" name="name" placeholder="e.g Jasmine" required><br><br>
 
-        <button onclick="Translate()">Translate 🌸</button>
+      <label for="hobby">I like </label>
+      <select id="hobby" name="hobby">
+        <option value="reading">Reading</option>
+        <option value="hiking">Hiking</option>
+        <option value="cooking">Cooking</option>
+        <option value="art">Art</option>
+      </select><br><br>
 
-      </form>
-      </aside>
-    </section>
-    <section class="asl-intro" id="asl-intro-display">
-      <h2>Introduction</h2>
-      
+      <button type="submit">Translate 🌸</button>
+    </form>
+  </aside>
 
-    </section>
+  <section class="cards" id="cards">
+    <h3>Introduction</h3>
+
+    <p>Your introduction will appear here in ASL.</p>
+  </section>
+</div>
+
+   
   </body>
   
    <footer>
