@@ -9,13 +9,15 @@ function Translate() {
 
     //ASL Alphabet
     const aslAlphabet = {
-         a: "images/asl/a.png", b: "images/asl/b.png", c: "images/asl/c.png", d: "images/asl/d.png", 
-         e: "images/asl/e.png", f: "images/asl/f.png", g: "images/asl/g.png", h: "images/asl/h.png", 
-         i: "images/asl/i.png", j: "images/asl/j.png", k: "images/asl/k.png", l: "images/asl/l.png", 
-         m: "images/asl/m.png", n: "images/asl/n.png", o: "images/asl/o.png", p: "images/asl/p.png", 
-         q: "images/asl/q.png", r: "images/asl/r.png", s: "images/asl/s.png", t: "images/asl/t.png", 
-         u: "images/asl/u.png", v: "images/asl/v.png", w: "images/asl/w.png", x: "images/asl/x.png", 
-         y: "images/asl/y.png", z: "images/asl/z.png",
+        a: "images/Sign_language_A.svg", b: "images/Sign_language_B.svg", c: "images/Sign_language_C.svg", 
+        d: "images/Sign_language_D.svg", e: "images/Sign_language_E.svg", f: "images/Sign_language_F.svg", 
+        g: "images/Sign_language_G.svg", h: "images/Sign_language_H.svg", i: "images/Sign_language_I.svg", 
+        j: "images/Sign_language_J.svg", k: "images/Sign_language_K.svg", l: "images/Sign_language_L.svg", 
+        m: "images/Sign_language_M.svg", n: "images/Sign_language_N.svg", o: "images/Sign_language_O.svg", 
+        p: "images/Sign_language_P.svg", q: "images/Sign_language_Q.svg", r: "images/Sign_language_R.svg", 
+        s: "images/Sign_language_S.svg", t: "images/Sign_language_T.svg", u: "images/Sign_language_U.svg", 
+        v: "images/Sign_language_V.svg", w: "images/Sign_language_W.svg", x: "images/Sign_language_X.svg", 
+        y: "images/Sign_language_Y.svg", z: "images/Sign_language_Z.svg"
         
         };
 
@@ -31,7 +33,7 @@ function Translate() {
      // Convert each letter of the name into ASL symbol
   for (let char of nameInput.toLowerCase()) {
     if (aslAlphabet[char]) {
-      myName += `<img src="${aslAlphabet[char]}" alt="${char}">`;
+      myName += `<img src="${aslAlphabet[char]}" alt="${char}" class="asl-symbol"> ${char}`
     } else {
       myName += `<span>${char}</span>`; // fallback for non-letters
     }
