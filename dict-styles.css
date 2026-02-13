@@ -3,8 +3,9 @@ body{
 }
 .dictionary {
   display: grid;
-  grid-template-columns: repeat(4,auto);
+  grid-template-columns: repeat(3,auto);
   gap: 20px;
+  padding:2%;
 }
 
 .dict-card {
@@ -16,7 +17,7 @@ body{
 }
 
 .dict-card img {
-  width: 150;
+  width: 150px;
   height: auto;
 }
 
@@ -29,7 +30,8 @@ body{
     margin-top: 180px;
     
 }
-.dictionary-opener{
+#dictionary-opener{
     text-align: center;
+    font-size:x-large ;
 
 }
