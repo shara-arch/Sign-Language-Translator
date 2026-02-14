@@ -43,5 +43,18 @@ function Translate() {
 
 
     
+
+
+
+
+  // --- Store in localStorage ---
+  let storedNames = JSON.parse(localStorage.getItem("aslNames")) || [];
+  storedNames.push({ name: nameInput, translation: translationHTML });
+  localStorage.setItem("aslNames", JSON.stringify(storedNames));
 }
+
+// Function to display all stored names with delete buttons
+
+}
+
 
