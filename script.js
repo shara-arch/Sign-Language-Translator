@@ -39,7 +39,7 @@ function Translate() {
       myName += `<span>${char}</span>`; // fallback for non-letters
     }
   }
-
+  cards.style.display = "";
   outputSection.innerHTML = myName;
   document.getElementById("userForm").reset();
 
