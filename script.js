@@ -133,7 +133,7 @@ function checkAnswer(answer) {
          score++;
          } 
          else {
-             feedback.textContent = "❌ Wrong! Correct: " + correct; 
+             feedback.textContent = "❌ Wrong! Correct Answer: " + correct; 
             }
              scoreDisplay.textContent = "Score: " + score; 
              nextBtn.disabled = false; 
