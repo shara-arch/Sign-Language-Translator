@@ -1,1 +1,3 @@
-# Sign-Language-Translator
+# ASL-Translator
+- This website is dedicated to advocating for inclusivity, with a special focus on the Deaf community.<br> 
+It provides practical guidance on respectful etiquette when communicating with Deaf persons, helping visitors build awareness and confidence in everyday interactions. The site also features an interactive function that teaches users how to introduce themselves using American Sign Language (ASL), an introductory ASL dictionary with images of common words and phrases, and a simple game designed to practice and reinforce sign recognition. Together, these resources create an engaging, educational space that promotes communication without barriers and fosters a more inclusive society.
