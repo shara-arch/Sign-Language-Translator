@@ -2,6 +2,7 @@ body{
     padding: 2%;
     margin: 0;
     background-color: #d69e7a;
+    font-family: 'Times New Roman', Times, serif;
 }
 a{
     text-decoration: none;
@@ -11,8 +12,8 @@ a:hover{
     text-decoration: underline;
 }
 .socials{
-    word-spacing: 50px;
-    font-size: small;
+    word-spacing: 5rem;
+    font-size: 0.9rem;
     color: black;
     
     
@@ -24,33 +25,38 @@ a:hover{
     top:0;
     left:0;
     width:100%;
-    padding: 15px;
+    padding: 1rem;
     text-align: center;
     opacity: 0.9;
 }
 .nav{
-    word-spacing: 200px;
+    word-spacing: 5rem;
     color: black;
     font-weight: 200;
-    font-size: large;
+    font-size: 1.2rem;
     width: 100%;
 }
 
 .welcome{
-    padding:50px;
+    padding:2rem;
     background-color: #d69e7a;
-    border-radius: 25%;
-    font-size: x-large;
+    border-radius: 15px;
+    font-size: 1.2rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin:10%;
+    margin: 2rem auto;
     text-align: center;
-    
+    max-width: 900px;
 }
 #image-container{
-   
-    gap:10px;
+    display: flex;
+    flex-wrap:wrap;
+    gap:1rem;
     padding:30px;
     margin:10%;
+    justify-content: center;
+    margin:auto;
+    max-width: 1000px;
+    margin-top: 7rem;
    
 }
 
@@ -58,23 +64,23 @@ img{
     border-radius: 10px;
 }
 .about-us{
-    width:70%;
-    height:100%;
-    padding: 70px;
-    margin: 100px;
+    
+    padding: 2rem;
+    margin: 2rem auto;
     background-color: #d4b5a1;
-    border-radius: 25%;
+    border-radius: 15px;
     text-align: center;
-    font-size: x-large;
+    font-size: 1.5rem;
+    max-width: 900px;
 }
 footer{
-    padding: 120px;
+    padding: 2remx;
     background-color: #f7ddcd;
     text-align: center;
     opacity: 0.9;
     line-height: 1.6;
     width:100%;
-    margin-top: 10px;
+    margin-top: 1rem;
 
     
 }
@@ -82,10 +88,21 @@ footer{
     
   background-color: #ffb6c1;
   border: none;
-  padding: 10px 15px;
+  padding: 0.6rem 1rem;
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
+  display: inline;
+  font-size: 1.2rem;
 
+}
+.gallery-2{
+    display: flex;
+    gap:1rem;
+    padding:30px;
+    margin:10%;
+    justify-content: center;
+    margin:auto;
+    max-width: 1000px;
 }
 
