@@ -109,11 +109,14 @@ function showQuestion() {
     optionsDiv.innerHTML = ""; 
 
     question.options.forEach(option => {
-         const btn = document.createElement("button"); 
-        btn.innerText = option; 
-        btn.onclick = () => checkAnswer(option); 
-        optionsDiv.appendChild(btn); 
-    }); 
+    const btn = document.createElement("button");
+    btn.innerText = option;
+    btn.classList.add("option-btn"); //Button Styles
+    btn.onclick = () => checkAnswer(option);
+    optionsDiv.appendChild(btn);
+});
+
+    
     progress.textContent = "Question " + (currentQuestion + 1) + " of " + questions.length;
 }
 
@@ -140,7 +143,7 @@ nextBtn.onclick = () => {
          else {
              feedback.textContent = "🏁 Finished! Final score: " + score + "/" + questions.length; 
              nextBtn.disabled = true; 
-             newGame.disabled = false;
+             newGame.style.display = "inline-block";
             } 
     };
 

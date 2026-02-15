@@ -4,6 +4,7 @@
 }
 body{
     text-align: center;
+    padding: 20px;
 }
 
 
@@ -26,14 +27,11 @@ body{
   padding: 10px 15px;
   border: none;
   border-radius: 6px;
-  background: #4CAF50;
-  color: white;
+  background: #CFF27E;
   cursor: pointer;
 }
 
-.option-btn:hover {
-  background: #45a049;
-}
+
 
 #feedback {
   font-weight: bold;
@@ -45,13 +43,18 @@ body{
   padding: 10px 15px;
   border: none;
   border-radius: 6px;
-  background: #2196F3;
-  color: white;
+  background: #F08CAE;
   cursor: pointer;
 }
 
 #next-btn:disabled {
-  background: #aaa;
+  
   cursor: not-allowed;
+}
+#new-game{
+    background-color:#F08CAE ;
+    padding: 10px 15px;
+    border-radius:5px;
+    cursor: pointer;
 }
 
