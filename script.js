@@ -177,7 +177,23 @@ function resetGame() {
     // Show the first question again
     showQuestion();
 }
+
+
+// Shuffle function 
+  function shuffleArray(array) { 
+    // Pick a random index btwn 0-1
+    for (let i = array.length - 1; i > 0; i--) {
+       const j = Math.floor(Math.random() * (i + 1)); 
+       // Swap elements
+       [array[i], array[j]] = [array[j], array[i]]; 
+      } }
+
+
+//Shuffle Array
+shuffleArray(questions);
+
 // Attach reset to new Game button
 newGame.onclick = resetGame;
+
 //Start game(won't work without it)
 showQuestion();
