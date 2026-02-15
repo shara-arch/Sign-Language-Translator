@@ -1,3 +1,4 @@
+//-----ASL TRANSLATOR----
 function Translate() {
      const nameInput = document.getElementById("name").value.trim(); 
      const outputSection = document.getElementById("cards"); 
@@ -44,6 +45,49 @@ function Translate() {
 
   }
 
+//--------ASL GAME-------
+const questions = [
+  { word: "Hello",
+     image: "https://i.pinimg.com/736x/6d/71/77/6d7177984ed53b7106f134849cd85944.jpg", 
+     options: ["Hello", "Yes", "No", "Thank you"] 
+    },
+  { word: "Thank you", 
+    image: "https://i.pinimg.com/originals/ea/d0/1c/ead01c20912bdf3464a5a8aa76e60f6f.gif", 
+    options: ["Sorry", "Thank you", "Hello", "Yes"] 
+    },
+  { word: "Yes", 
+    image: "https://i.pinimg.com/originals/ee/7e/4b/ee7e4bf6dfa38a3e28e6708d023c481c.gif", 
+    options: ["No", "Yes", "Maybe", "Hello"] 
+    },
+  { word: "No", 
+    image: "https://i.pinimg.com/736x/83/e8/c2/83e8c2507e2b3b29aaad4381afe2e748.jpg", 
+    options: ["Yes", "No", "Thank you", "Sorry"] 
+    },
+  { word: "Sorry", 
+    image: "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHBjazhyZmR6MG50Zzc4c3R6cXI3OHJxeWNyNzAwbDY0dGo5NHR3NiZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/imIfawMEuUBGeHISs0/giphy.webp", 
+    options: ["Hello", "Sorry", "Yes", "No"] 
+    },
+  { word: "Please", 
+    image: "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzRxa2tuZHNzemNlY2tmd2d0OWcydzg5N250Z2R3dTA5amxtY2h1ayZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/MRKcHkNMUReYTCoS1a/giphy.webp", 
+    options: ["Thank you", "Please", "Sorry", "Hello"] 
+    },
+  { word: "Goodbye", 
+    image: "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGZpazFyNGJqNXJmY3lyeGR4YmZ0Nnc2eDI0ZThhYTRpYm5ocmNmdyZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/9lCFnUmtcAm2ASj19T/200.webp", 
+    options: ["Hello", "Yes","Goodbye", "No"] 
+    },
+  { word: "Help", 
+    image: "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2ZqamplODluZDdtd3d4cmdkNTJqcWhyZzFldHZiY21wY3Y2eHZleiZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/QvpdP2cLOB1dGcVVKt/giphy.webp", 
+    options: ["Please", "Thank you","Help", "Sorry"] 
+    },
+  { word: "Love", 
+    image: "https://i.pinimg.com/736x/9d/38/81/9d3881abd845a5ac80f98f2e9b4103dd.jpg", 
+    options: ["Love", "Hello", "Goodbye", "Yes"] 
+    },
+  { word: "Friend", 
+    image: "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcW9uNG5xMWJyazBrNXkyZGdoNWdwaGppZDA4bDl3c2ZoY3g3ZzZvayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/N2D6HGO8PdgivXg9qy/giphy.webp", 
+    options: ["Help", "Love", "No", "Friend"] 
+    }
+];
  
 
 
