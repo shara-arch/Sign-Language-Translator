@@ -48,7 +48,7 @@ function Translate() {
 //--------ASL GAME-------
 const questions = [
   { word: "Hello",
-     image: "https://i.pinimg.com/736x/6d/71/77/6d7177984ed53b7106f134849cd85944.jpg", 
+     image: "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExenhkbDBycmY1cWRxZm44NWJ2dHc3a25wMHZpYXN4MnNuemJndjZraCZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/DcPfy7StVKeB5dv0ND/giphy.webp", 
      options: ["Hello", "Yes", "No", "Thank you"] 
     },
   { word: "Thank you", 
@@ -114,28 +114,31 @@ function showQuestion() {
         btn.onclick = () => checkAnswer(option); 
         optionsDiv.appendChild(btn); 
     }); 
-    progress.textContent = "Question" + (currentQuestion + 1) + "of" + questions.length;
+    progress.textContent = "Question " + (currentQuestion + 1) + " of " + questions.length;
 }
 
 function checkAnswer(answer) {
-     const correct = questions[current].word;
+     const correct = questions[currentQuestion].word;
       if (answer === correct) {
-         feedback.textContent = "✅ Correct!"; score++;
+         feedback.textContent = "✅ Correct!"; 
+         score++;
          } 
          else {
-             feedback.textContent = "❌ Wrong! Correct: " + correct; }
+             feedback.textContent = "❌ Wrong! Correct: " + correct; 
+            }
              scoreDisplay.textContent = "Score: " + score; 
              nextBtn.disabled = false; 
      }
 
 nextBtn.onclick = () => {
-     current++; if (current < questions.length) {
+     currentQuestion++; 
+     if (currentQuestion < questions.length) {
+        feedback.textContent = "";
+        nextBtn.disabled = true;
          showQuestion(); 
         }
          else {
-             feedback.textContent = "🎉 Finished! Final score: " + score + "/" + questions.length; 
-             optionsDiv.innerHTML = ""; 
-             signImage.src = ""; 
+             feedback.textContent = "🏁 Finished! Final score: " + score + "/" + questions.length; 
              nextBtn.disabled = true; 
              newGame.disabled = false;
             } 
