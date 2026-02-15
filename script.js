@@ -133,6 +133,7 @@ function checkAnswer(answer) {
              nextBtn.disabled = false; 
      }
 
+     
 nextBtn.onclick = () => {
      currentQuestion++; 
      if (currentQuestion < questions.length) {
