@@ -68,6 +68,11 @@ It provides practical guidance on respectful etiquette when communicating with D
 
 ---
 
+## Link to Live Site
+    https://shara-arch.githuub.io/Sign-Language-Translator/
 
+---
+
+## LICENSE
 
 
