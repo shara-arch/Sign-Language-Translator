@@ -1,5 +1,5 @@
 body{
-    padding: 0;
+    padding: 2%;
     margin: 0;
     background-color: #d69e7a;
 }
@@ -47,24 +47,13 @@ a:hover{
     
 }
 #image-container{
-    display:grid;
-    grid-template-columns:repeat(2,auto);
+   
     gap:10px;
     padding:30px;
     margin:10%;
    
 }
-.gallery-2{
-    display:grid;
-    grid-template-columns:repeat(3,auto);
-    gap:10px;
-    padding:30px;
-    margin:10px;
-    background-color: #eeaac1;
-    min-width: fit-content;
-    opacity: 0.9;
-    border-radius: 10px;
-}
+
 img{
     border-radius: 10px;
 }

@@ -42,16 +42,7 @@ form{
 }
 
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  background-color: rgb(212, 211, 171);
-  border-radius: 25px;
-  
-  padding:5px;
-  margin-bottom: 2%;
-}
+
 
 aside {
   flex: 1;
@@ -74,7 +65,7 @@ button:hover {
   background-color: #ff8da1;
 }
 
-.cards {
+#cards {
   flex: 2;
   margin-left: 30px;
   background-color: #d2e89e;
@@ -96,7 +87,7 @@ button:hover {
     border-radius: 10px;
 } */
 .asl-symbol {
-  width: 80px;      
+  width: 80px;       /* adjust size as needed */
   height: auto;      
   margin: 6px;       
   vertical-align: middle;
