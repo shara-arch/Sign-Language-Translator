@@ -40,50 +40,11 @@ function Translate() {
   }
 
   outputSection.innerHTML = myName;
-
-
-  // LOCAL STORAGE
-  let storedNames = JSON.parse(localStorage.getItem("aslNames")) || [];
-  storedNames.push({ name: nameInput, translation: myName });
-  localStorage.setItem("aslNames", JSON.stringify(storedNames));
-
   document.getElementById("userForm").reset();
 
-}
-
-// Display Stored Names
-function displayStoredNames() {
-  const outputSection = document.getElementById("cards");
-  let storedNames = JSON.parse(localStorage.getItem("aslNames")) || [];
-
-  if (storedNames.length === 0) {
-    outputSection.innerHTML = "<p>No names stored yet.</p>";
-    return;
   }
 
-  let myNames = "<h3>Stored Names</h3>";
-  storedNames.forEach((entry, index) => {
-    myNames += `
-      <div class="stored-entry">
-        ${entry.translation}
-        <button onclick="DeleteName(${index})">Delete</button>
-      </div>
-      <hr>
-    `;
-  });
+ 
 
-  outputSection.myName = myNames;
-}
-
-// Function to delete a specific name by index with confirmation
-function DeleteName(index) {
-  let storedNames = JSON.parse(localStorage.getItem("aslNames")) || [];
-
-  if (confirm("Are you sure you want to delete this name?")) {
-    storedNames.splice(index, 1); // remove the entry
-    localStorage.setItem("aslNames", JSON.stringify(storedNames));
-    displayStoredNames(); // refresh the list
-  }
-}
 
 

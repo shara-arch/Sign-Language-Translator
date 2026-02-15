@@ -96,8 +96,20 @@ button:hover {
     border-radius: 10px;
 } */
 .asl-symbol {
-  width: 80px;       /* adjust size as needed */
-  height: auto;      /* keeps proportions */
-  margin: 6px;       /* spacing between symbols */
+  width: 80px;      
+  height: auto;      
+  margin: 6px;       
   vertical-align: middle;
 }
+.asl-card {
+  border: 1px solid #ccc;
+  padding: 12px;
+  margin: 10px;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+
+
