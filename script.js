@@ -102,3 +102,15 @@ const nextBtn = document.getElementById("next-btn");
 const newGame = document.getElementById("new-game");
 
 
+function showQuestion() { 
+    const q = questions[current]; signImage.src = q.image; optionsDiv.innerHTML = ""; 
+    feedback.textContent = ""; 
+    nextBtn.disabled = true; 
+    
+    q.options.forEach(option => { const btn = document.createElement("button"); 
+        btn.textContent = option; 
+        btn.onclick = () => checkAnswer(option); 
+        optionsDiv.appendChild(btn); 
+    }); 
+}
+
