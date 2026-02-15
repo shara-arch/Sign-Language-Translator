@@ -149,7 +149,7 @@ nextBtn.onclick = () => {
         }
          else {
              feedback.textContent = "🏁 Finished! Final score: " + score + "/" + questions.length; 
-               // ✅ Update high score.
+               // Update high score.
         if (score > highScore) {
             highScore = score;
             localStorage.setItem("highScore", highScore);
@@ -162,5 +162,22 @@ nextBtn.onclick = () => {
             } 
     };
 
-    showQuestion();
+    //Reset Game
+function resetGame() {
+    
+    score = 0;
+    currentQuestion = 0;
 
+    // Reset UI elements
+    scoreDisplay.textContent = "Score: " + score;
+    feedback.textContent = "";
+    nextBtn.disabled = true;
+    newGame.style.display = "none"; // hide the new game button
+
+    // Show the first question again
+    showQuestion();
+}
+// Attach reset to new Game button
+newGame.onclick = resetGame;
+//Start game(won't work without it)
+showQuestion();
