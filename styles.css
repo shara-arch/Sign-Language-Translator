@@ -73,8 +73,19 @@ footer{
     text-align: center;
     opacity: 0.9;
     line-height: 1.6;
-    /* width:100%; */
+    width:100%;
+    margin-top: 5%;
 
     
+}
+.nav-btn{
+    
+  background-color: #ffb6c1;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+
 }
 
