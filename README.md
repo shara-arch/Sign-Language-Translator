@@ -3,7 +3,7 @@
 <p>This website is dedicated to advocating for inclusivity, with a special focus on the Deaf community.<br> 
 It provides practical guidance on respectful etiquette when communicating with Deaf persons, helping visitors build awareness and confidence in everyday interactions. <p>The site also features an interactive function that teaches users how to introduce themselves using American Sign Language (ASL), an introductory ASL dictionary with images of common words and phrases, and a simple game designed to practice and reinforce sign recognition. Together, these resources create an engaging, educational space that promotes communication without barriers and fosters a more inclusive society.</p>
 
----
+
 ---
 ### Author's Information
 #### Author's Name: Sharon Moegi
@@ -17,10 +17,11 @@ It provides practical guidance on respectful etiquette when communicating with D
     `cd Sign-Language-Translator`
 - Open `index.html` on your preferred browser.
 
+---
 
 ### Behaviour-Driven Development (BDD)
 
-#### 1a. Display a Form on the Introduction Page
+#### 1a. ASL Translator
 - **Input:** User’s name  
 - **Output:** Displays the user’s name using ASL signs in a personalized card
 
@@ -28,7 +29,6 @@ It provides practical guidance on respectful etiquette when communicating with D
 - **Condition:** Name input is empty or null  
 - **Output:** Display an error message prompting the user to enter a valid name
 
----
 
 #### 2a. ASL Game
 - **Feature:** Interactive card-based game with ASL signs  
@@ -43,18 +43,31 @@ It provides practical guidance on respectful etiquette when communicating with D
 
 ### Example BDD Scenario (ASL Game)
 
-  Scenario: Selecting the correct answer
-    Given an ASL sign card is displayed
-    And multiple choice options are shown
-    When I select the correct option
-    Then the system should display "✅ Correct!"
+  Scenario:<br>
+    Selecting the correct answer<br>
+    Given an ASL sign card is displayed<br>
+    And multiple choice options are shown<br>
+    When I select the correct option<br>
+    Then the system should display "✅ Correct!"<br>
     And my score should increase
 
-  Scenario: Selecting the wrong answer
-    Given an ASL sign card is displayed
-    And multiple choice options are shown
-    When I select an incorrect option
-    Then the system should display "❌ Wrong"
+  Scenario:<br> 
+    Selecting the wrong answer
+    Given an ASL sign card is displayed<br>
+    And multiple choice options are shown<br>
+    When I select an incorrect option<br>
+    Then the system should display "❌ Wrong"<br>
     And reveal the correct answer
+
+---
+
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+
+---
+
+
 
 
