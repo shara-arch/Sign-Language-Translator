@@ -42,9 +42,9 @@ It provides practical guidance on respectful etiquette when communicating with D
   - System marks the answer as **Correct ✅** or **Wrong ❌**  
   - If wrong, the correct answer is displayed immediately  
 
----
 
-### Example BDD Scenario (ASL Game)
+
+#### Example BDD Scenario (ASL Game)
 
   Scenario:<br>
     Selecting the correct answer<br>
