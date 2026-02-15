@@ -1,30 +1,35 @@
 .asl-etiquette{
     
-    text-align: left;
-    margin-left: 10%;
-    padding:30px;
-    font-size: larger;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    max-width: 900px;
 
 }
 body{
-    padding:20px;
+    padding:1rem;
+    font-family: 'Times New Roman', Times, serif;
 }
 .heading{
     text-align: center;
-    margin-top: 180px;
+    margin-top: 9rem;
     
 }
 
+
+#cards,
 form{
     grid-template-columns: 150px 1fr;
-    grid-gap: 15px 20px;
+    /* grid-gap: 15px 20px; */
     width: 70%;
     text-align: left;
-    padding: 50px;
+    padding: 3rem;
     background-color: #d2e89e;
     margin: 50px auto;
     max-width: fit-content;
-    font-size: large;
+    font-size: 1rem;
     flex:1;
     border-radius: 20px;
 }
@@ -41,18 +46,6 @@ form{
     padding-bottom: 0;
 }
 
-
-
-
-aside {
-  flex: 1;
-  max-width: 350px;
-  
-  padding: 20px;
-  border-radius: 8px;
-}
-
-
 button {
   background-color: #ffb6c1;
   border: none;
@@ -65,29 +58,12 @@ button:hover {
   background-color: #ff8da1;
 }
 
-#cards {
-  flex: 2;
-  margin-left: 30px;
-  background-color: #d2e89e;
-  border-radius: 20px;
-  padding: 2%;
-  padding-bottom: 0;
-  
-}
 
-.card {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 15px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  
-}
-/* img{
-    border-radius: 10px;
-} */
+
+
+
 .asl-symbol {
-  width: 80px;       /* adjust size as needed */
+  width: 5rem;       
   height: auto;      
   margin: 6px;       
   vertical-align: middle;
