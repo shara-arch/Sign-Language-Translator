@@ -120,6 +120,12 @@ function showQuestion() {
     progress.textContent = "Question " + (currentQuestion + 1) + " of " + questions.length;
 }
 
+
+// Add Local Storage.
+let highScore = localStorage.getItem("highScore") || 0;
+scoreDisplay.textContent = "Score: " + score + " | High Score: " + highScore;
+
+
 function checkAnswer(answer) {
      const correct = questions[currentQuestion].word;
       if (answer === correct) {
@@ -133,7 +139,7 @@ function checkAnswer(answer) {
              nextBtn.disabled = false; 
      }
 
-     
+
 nextBtn.onclick = () => {
      currentQuestion++; 
      if (currentQuestion < questions.length) {
