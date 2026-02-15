@@ -3,7 +3,7 @@ function Translate() {
      const outputSection = document.getElementById("cards"); 
     //  DATA VALIDATION
      if (!nameInput) { 
-        outputSection.innerHTML = "<p>Please enter a name.</p>"; 
+        alert("Please enter a name." )
         return; 
     }
 
