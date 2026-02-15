@@ -89,6 +89,16 @@ const questions = [
     }
 ];
  
+let currentQuestion = 0; 
+let score = 0; 
 
+//Call DOM Elements
+const signImage = document.getElementById("sign-image"); 
+const optionsDiv = document.getElementById("options"); 
+const feedback = document.getElementById("feedback"); 
+const scoreDisplay = document.getElementById("score"); 
+const progressDisplay = document.getElementById("progress"); 
+const nextBtn = document.getElementById("next-btn");
+const newGame = document.getElementById("new-game");
 
 
