@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="summary-styles.css">
+    <link rel="stylesheet" href="game-styles.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Summary Page</title>
   </head>
@@ -29,11 +29,27 @@
         <a href="index.html">Home</a> 
         <a href="asl-introduction.html">Introduction</a>
         <a href="asl-dictionary.html">Dictionary</a>
-        <a href="asl-game.html">ASL Game</a>
+        <a href="asl-game.html">ASL-Game</a>
         
         </div>
     </header>
-  </body>
+  
+  <h1 class="heading">ASL Game</h1>
+  <p>Pick the correct word for the ASL sign shown!</p>
+
+  <div class="asl-game" id="game">
+    <div id="sign-container">
+      <img id="sign-image" src="" alt="ASL sign">
+    </div>
+    <div id="options"></div>
+    <p id="feedback"></p>
+    <p id="score">Score: 0</p>
+    <p id="progress">Question 1 of 10</p>
+    <button id="next-btn" disabled>Next</button>
+    <button id="new-game" disabled><a href="asl-game.html">New Game</a></button>
+  </div>
+
+  <script src="script.js"></script>
 
  <footer>
     <p>
@@ -50,6 +66,6 @@
     </p>Together for equality. Reach out and join the conversation.
     <p class="Copyright">ASL Translator &copy; 2026</p>
 </footer>
-
+</body>
   </html>
 
