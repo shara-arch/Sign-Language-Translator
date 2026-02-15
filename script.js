@@ -149,6 +149,14 @@ nextBtn.onclick = () => {
         }
          else {
              feedback.textContent = "🏁 Finished! Final score: " + score + "/" + questions.length; 
+               // ✅ Update high score.
+        if (score > highScore) {
+            highScore = score;
+            localStorage.setItem("highScore", highScore);
+            feedback.textContent += " 🎉 New High Score!";
+        }
+
+        scoreDisplay.textContent = "Score: " + score + " | High Score: " + highScore;
              nextBtn.disabled = true; 
              newGame.style.display = "inline-block";
             } 
