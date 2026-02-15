@@ -6,3 +6,52 @@ body{
     text-align: center;
 }
 
+
+#sign-container img {
+  width: 200px;
+  margin: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+#options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.option-btn {
+  margin: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  background: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.option-btn:hover {
+  background: #45a049;
+}
+
+#feedback {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+#next-btn {
+  margin-top: 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  background: #2196F3;
+  color: white;
+  cursor: pointer;
+}
+
+#next-btn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+

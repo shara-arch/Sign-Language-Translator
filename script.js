@@ -100,17 +100,46 @@ const scoreDisplay = document.getElementById("score");
 const progressDisplay = document.getElementById("progress"); 
 const nextBtn = document.getElementById("next-btn");
 const newGame = document.getElementById("new-game");
+const progress = document.getElementById("progress");
 
 
 function showQuestion() { 
-    const q = questions[current]; signImage.src = q.image; optionsDiv.innerHTML = ""; 
-    feedback.textContent = ""; 
-    nextBtn.disabled = true; 
-    
-    q.options.forEach(option => { const btn = document.createElement("button"); 
-        btn.textContent = option; 
+    const question = questions[currentQuestion]; 
+    signImage.src = question.image; 
+    optionsDiv.innerHTML = ""; 
+
+    question.options.forEach(option => {
+         const btn = document.createElement("button"); 
+        btn.innerText = option; 
         btn.onclick = () => checkAnswer(option); 
         optionsDiv.appendChild(btn); 
     }); 
+    progress.textContent = "Question" + (currentQuestion + 1) + "of" + questions.length;
 }
+
+function checkAnswer(answer) {
+     const correct = questions[current].word;
+      if (answer === correct) {
+         feedback.textContent = "✅ Correct!"; score++;
+         } 
+         else {
+             feedback.textContent = "❌ Wrong! Correct: " + correct; }
+             scoreDisplay.textContent = "Score: " + score; 
+             nextBtn.disabled = false; 
+     }
+
+nextBtn.onclick = () => {
+     current++; if (current < questions.length) {
+         showQuestion(); 
+        }
+         else {
+             feedback.textContent = "🎉 Finished! Final score: " + score + "/" + questions.length; 
+             optionsDiv.innerHTML = ""; 
+             signImage.src = ""; 
+             nextBtn.disabled = true; 
+             newGame.disabled = false;
+            } 
+    };
+
+    showQuestion();
 
