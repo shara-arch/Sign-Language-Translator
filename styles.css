@@ -99,6 +99,11 @@ footer{
   margin-top: 1rem;
 
 }
+.nav-btns{
+    display:flex;
+    justify-content: center;
+    gap: 1rem;
+}
 .gallery-2{
     display: flex;
     gap:1rem;
