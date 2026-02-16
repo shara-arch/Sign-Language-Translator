@@ -90,12 +90,12 @@ footer{
     
   background-color: #ffb6c1;
   border: none;
-  padding: 0.6rem 1rem;
+  padding: 0.4rem 0.8rem;
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
   display: inline;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   margin-top: 1rem;
 
 }

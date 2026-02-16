@@ -35,3 +35,19 @@ body{
     font-size:x-large ;
 
 }
+
+/* Responsive  design*/
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  section {
+    margin: 1rem;
+    padding: 0.5rem;
+  }
+
+  form {
+    font-size: 0.9rem;
+  }
+}

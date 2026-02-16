@@ -22,7 +22,6 @@ body{
 #cards,
 form{
     grid-template-columns: 150px 1fr;
-    /* grid-gap: 15px 20px; */
     width: 70%;
     text-align: left;
     padding: 3rem;
