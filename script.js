@@ -167,6 +167,7 @@ function resetGame() {
     
     score = 0;
     currentQuestion = 0;
+    shuffleArray(questions);
 
     // Reset UI elements
     scoreDisplay.textContent = "Score: " + score;
@@ -176,6 +177,8 @@ function resetGame() {
 
     // Show the first question again
     showQuestion();
+
+    
 }
 
 
