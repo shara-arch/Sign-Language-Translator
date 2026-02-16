@@ -1,11 +1,11 @@
 body{
-    padding:20px;
+    padding:1rem;
 }
 .dictionary {
   display: grid;
   grid-template-columns: repeat(3,auto);
   gap: 20px;
-  padding:1rem;
+  /* padding:1rem; */
 }
 
 .dict-card {
