@@ -44,6 +44,13 @@ function Translate() {
   document.getElementById("userForm").reset();
 
   }
+  // Add Event Listener
+  const nameField = document.getElementById("name");
+  nameField.addEventListener("keydown", (event)=>{
+    if(event.key === "Enter"){
+      Translate();
+    }
+  })
 
 //--------ASL GAME-------
 const questions = [
