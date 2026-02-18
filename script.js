@@ -7,7 +7,13 @@ function Translate() {
         alert("Please enter a name." )
         return; 
     }
-
+    // Ensure only letters can be used as input.
+    const lettersOnly = /^[A-Za-z]+$/;
+    if (!lettersOnly.test(nameInput)){
+      alert("Please enter valid name.");
+      userForm.reset();
+      return;
+    }
     //ASL Alphabet
     const aslAlphabet = {
         a: "images/Sign_language_A.svg", b: "images/Sign_language_B.svg", c: "images/Sign_language_C.svg", 
